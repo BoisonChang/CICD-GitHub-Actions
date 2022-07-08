@@ -9,7 +9,7 @@ jobs:
   build:
     name: Build and deploy gh-pages
     env:
-      MY_SECRET   : ${{secrets.commit_secret}}
+      MY_SECRET   : ${{secrets.COMMIT_SECRET}}
       PUBLISH_DIR : ./build
     runs-on: ubuntu-latest
     strategy:
@@ -43,7 +43,7 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{secrets.COMMIT_SECRET}}
         branch: 'gh-pages'
         force: true
         directory: './build'
