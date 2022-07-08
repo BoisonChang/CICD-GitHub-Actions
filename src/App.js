@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn CICD by GitHub Actions 0708-XDD
+          Learn CICD by GitHub Actions 0708-0945
         </a>
       </header>
     </div>
